@@ -4,7 +4,7 @@ A small, dependency-free Python tool that reads authentication logs and flags th
 
 ## Why it matters
 
-Authentication logs are usually the first data source in an investigation, and the highest-signal attacks against identity systems are pattern-based: many failures in a short window, one source testing many accounts, or a success that arrives right after a pile of failures. This tool automates that first-pass triage, grades each finding by severity, tags it with a MITRE ATT&CK technique, and attaches the raw evidence lines so a finding can be verified in seconds instead of by grepping logs by hand.
+Authentication logs are usually the first data source in an investigation, and the highest-signal attacks against identity systems are pattern-based: many failures in a short window, one source testing many accounts, or a success that arrives right after a pile of failures. This tool automates that first-pass triage. It grades each finding by severity, tags it with a MITRE ATT&CK technique, and attaches the raw evidence lines, so a finding can be verified in seconds instead of by grepping logs by hand.
 
 ## Detections
 
@@ -17,7 +17,7 @@ Authentication logs are usually the first data source in an investigation, and t
 
 ## How to run
 
-Python 3.9+, standard library only — nothing to install.
+Python 3.9+, standard library only. Nothing to install.
 
 ```bash
 python3 src/log_triage.py data/sample-auth.log
@@ -72,4 +72,4 @@ output/report.md       generated report (created when you run the tool)
 
 ## License
 
-MIT — see [LICENSE](LICENSE). Copyright (c) 2026 Araf Abubakar.
+MIT. See [LICENSE](LICENSE). Copyright (c) 2026 Araf Abubakar.
